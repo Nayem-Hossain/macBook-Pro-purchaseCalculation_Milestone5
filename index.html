@@ -6,22 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>macbook pro purchase calculation</title>
-    <!-- self CSS style sheet -->
-    <link rel="stylesheet" href="CSS file/style.css">
+
     <!-- bootstrap-5 CSS cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
 </head>
 
 <body>
     <main>
         <section class="container">
             <div class="row justify-content-between my-4">
+
+                <!-- product image container -->
                 <div class="col-5 p-2">
                     <img class="img-fluid" src="images/mac.png" alt="macbook pro">
                 </div>
+
+                <!-- product hardware details and price container -->
                 <div class="col-6 p-2">
+
+                    <!-- product name and details -->
                     <div>
                         <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
                         <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU,
@@ -31,29 +35,37 @@
                             Magic
                             Keyboard - US English</p>
                     </div>
+
+                    <!-- extra memory cost section -->
                     <div class="mt-5">
                         <h6 class="fw-bold">Memory</h6>
-                        <input id="8gb-memory" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="8gb-memory" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="8GB unified memory">
-                        <input id="16gb-memory" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="16gb-memory" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="16GB unified memory">
                     </div>
+
+                    <!-- extra storage cost section -->
                     <div class="mt-5">
                         <h6 class="fw-bold">Storage</h6>
-                        <input id="256gb-storage" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="256gb-storage" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="256GB SSD storage">
-                        <input id="512gb-storage" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="512gb-storage" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="512GB SSD storage">
-                        <input id="1tb-storage" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="1tb-storage" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="1TB SSD storage">
                     </div>
+
+                    <!-- delivery cost section -->
                     <div class="mt-5">
                         <h6 class="fw-bold">Choose your delivery option</h6>
-                        <input id="free-delivery" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="free-delivery" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="Friday, Aug 25 FREE Prime Delivery">
-                        <input id="premium-delivery" class="rounded-3 p-1 background-default dark-hover" type="button"
+                        <input id="premium-delivery" class="btn btn-outline-dark rounded-3 p-1" type="button"
                             value="Friday, Aug 21 Delivery Charge $20">
                     </div>
+
+                    <!-- total cost based on hardware requirements -->
                     <div class="mt-5">
                         <table class="table table-hover fw-bold w-75">
                             <tbody>
@@ -82,14 +94,19 @@
                             </tfoot>
                         </table>
                     </div>
+
+                    <!-- promo code using section -->
                     <div>
                         <h6>Add Promo Code</h6>
                         <input id="promocode-field" class="rounded-3 p-1" type="text">
-                        <button id="apply-btn" class="rounded-3 p-1 bg-primary text-white">Apply</button>
+                        <button id="apply-btn"
+                            class="btn-outline-primary rounded-3 p-1 bg-primary text-white">Apply</button>
                     </div>
                 </div>
             </div>
             <hr>
+
+            <!--showing total price after using promo-code -->
             <div>
                 <h1 class="text-center mb-5">Total: $<span id="current-price">1299</span></h1>
             </div>
@@ -98,6 +115,7 @@
 
     <!-- self javascript file link -->
     <script src="javaScript file/purchaseCalculation.js"></script>
+
     <!-- bootstrap-5 javascript bundle with Popper cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -31,6 +31,7 @@ function PromoCodePrice() {
   }
   else{
       alert("Sorry! Your Code is Wrong. Please Try Again...");
+      document.getElementById("promocode-field").value = "";
   }
 }
 
